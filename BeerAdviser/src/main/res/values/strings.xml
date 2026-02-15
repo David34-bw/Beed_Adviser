@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">BeerAdviser</string>
     <string name="find_beer">Find Beer</string>
-    <string name="brands">Select beer color</string>
-    <string name="button_text">Find Beer!</string>
+    <string name="brands">No beers selected</string>
+
+    <string-array name="beer_colors">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+
+    <string name="zone">No zone selected</string>
+
+    <string-array name="zones">
+        <item>Pacifica</item>
+        <item>Orinoquia</item>
+        <item>Amazonia</item>
+        <item>Andina</item>
+        <item>Caribe</item>
+        <item>Insular</item>
+    </string-array>
+
+
 </resources>

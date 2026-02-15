@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +8,25 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context="co.edu.unipiloto.beeradviser.FindBeerActivity">
+
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/beer_colors" />
+
+    <Button
+        android:id="@+id/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="onClickFindBeer"
+        android:text="@string/find_beer" />
+
 
     <TextView
         android:id="@+id/brands"
@@ -16,20 +36,31 @@
         android:layout_margin="16dp"
         android:text="@string/brands" />
 
-    <Button
-        android:id="@+id/find_beer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:text="@string/button_text" />
 
     <Spinner
-        android:id="@+id/color"
+        android:id="@+id/zones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:entries="@array/zones"/>
+
+    <Button
+        android:id="@+id/find_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="Search Stations"
+        android:onClick="onClickFindZones" />
+
+    <TextView
+        android:id="@+id/zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/zone" />
 
 </LinearLayout>

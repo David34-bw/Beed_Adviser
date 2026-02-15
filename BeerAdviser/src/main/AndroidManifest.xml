@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeedAdviser">
         <activity
-            android:name=".FindBeerActivity"
+            android:name=".beeradviser.FindBeerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
